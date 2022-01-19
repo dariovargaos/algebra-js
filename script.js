@@ -1,17 +1,19 @@
-var firstName, lastName, price, discount, fullPrice;
+// prvi zadatak
+var firstName = "Dario";
+var lastName = "Varga";
+var fullName = firstName + " " +  lastName;
 
-firstName = "John";
-lastName = "Doe";
-price = 19.90;
-discount = 0.10;
+console.log(fullName);
 
-if (x == 1) {
-    x = 2;
-};
+//drugi zadatak
 
-if (a) {
-    var z = 44;
-	return 0;
-};
 
-fullPrice = price * 100 / discount;
+//treci zadatak
+for(num = 1; num <= 20; num++){
+    if(num % 2 == 0){
+        console.log("Broj " + num + " je paran.");
+    }
+    else{
+        console.log("Broj " + num + " je neparan.");
+    }
+}
