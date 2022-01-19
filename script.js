@@ -17,3 +17,20 @@ for(num = 1; num <= 20; num++){
         console.log("Broj " + num + " je neparan.");
     }
 }
+
+//cetvrti zadatak
+var array = ["Ivana", "Sanjin", "Marijan", "Doroti", "Damir", "Lorena", "Ružica"];
+array.forEach(element => console.log(element));
+
+var array2 = [
+    ["Dijete", "Odrasla osoba"],
+    ["Računalo", "Pisača mašina"],
+    ["Mokro", "Suho"]
+
+];
+
+console.table(array2);
+
+array2.push(["Gladan", "Sit"]);
+
+console.table(array2);
