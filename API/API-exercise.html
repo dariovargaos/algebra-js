@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Moj API</title>
+</head>
+
+<body>
+    <p>Svaki put kada osvježite stranicu, upišite ime da bismo pokušali predvidjeti vaše godine.</p>
+
+    <script>
+        const ime = window.prompt("Enter your name: ");
+        fetch(`https://api.agify.io?name=${ime}`)
+            .then(response => response.json()) // Uzimamo response, konvertiramo ga iz JSON-a u objekt
+            .then(data => alert(`${ime}, you are ${data.age} years old.`)) // Postavljamo podatke koristeći key
+            .catch(error => alert(error))
+    </script>
+</body>
+
+</html>
